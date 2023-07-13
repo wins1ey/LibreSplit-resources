@@ -1,0 +1,29 @@
+.timer.losing {
+    background-color: #6A6;
+}
+
+.timer.behind {
+    background-color: #A66;
+}
+
+.timer.behind.losing {
+    background-color: #C00;
+}
+
+.timer.delay {
+    background-color: #999;
+}
+
+.timer.best-split {
+    background-color: #99F;
+}
+
+.timer {
+    font-family: "7 Segmental Digital Display";
+    text-shadow: none;
+    background-color: #0C0;
+}
+
+.timer-seconds, .timer-millis {
+    background-color: #000;
+}
