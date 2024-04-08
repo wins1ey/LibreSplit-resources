@@ -15,7 +15,7 @@ function state()
 
     current.has_played_intro = (readAddress('string17', 0x36A7C8) == "Intro_02")
     current.level_id = readAddress('byte', 0x36A788, 0x20, 0x5C4)
-    current.is_career_started = (readAddress('byte', 0x36A788, 0x20, 0x592) & 0x8) ~= 0
+    current.is_career_started = bit.band(readAddress('byte', 0x36A788, 0x20, 0x592), 0x8) ~= 0
     current._goal_count = readAddress('byte', 0x36A788, 0x3A8, 0x24)
     current.chapter = readAddress('byte', 0x36A788, 0x3A8, 0x3C)
     current.is_loading = readAddress('bool', 0x29851C, 0x24, 0x174)
